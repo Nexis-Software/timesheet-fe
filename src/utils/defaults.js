@@ -1,0 +1,55 @@
+export const COLOR_VARIABLES = {
+  ZINGY_GREEN: "#04bc00",
+  ZINGY_GREEN_LIGHT: "rgba(255, 138, 74, 0.4)",
+  TANGERINE: "#04bc00",
+  BLACK: "#000000",
+  WHITE: "#FFFFFF",
+};
+
+export const DEFAULT_USER = {
+  _id: "679390c6fa90dc9cc71fadf4",
+  username: "amantha",
+  firstName: "Amantha",
+  lastName: "Jayathilake",
+  position: "Software Engineer",
+  email: "amantha.jayathilake@hapstar.app",
+  role: "superAdmin",
+  company: "Hapstar",
+  companyLogo:
+    "https://hapstar.app/wp-content/uploads/2024/02/hapstar-logo-1024x234.png",
+  linkedInProfile: "https://www.linkedin.com/in/amantha-jayathilake/",
+  profilePicture:
+    "https://res.cloudinary.com/amantha/image/upload/v1737724000/fio6tlbnn6cafglaxpe0.jpg",
+  createdAt: "2025-01-24T13:08:22.738Z",
+  updatedAt: "2025-01-24T13:08:22.738Z",
+  __v: 0,
+  iat: 1737735199,
+  exp: 1738339999,
+};
+
+export const YearMonthOptions = [
+  `2025 January`,
+  `2025 February`,
+  `2025 March`,
+  `2025 April`,
+  `2025 May`,
+  `2025 June`,
+  `2025 July`,
+  `2025 August`,
+  `2025 September`,
+  `2025 October`,
+  `2025 November`,
+  `2025 December`,
+  `2026 January`,
+  `2026 February`,
+  `2026 March`,
+  `2026 April`,
+  `2026 May`,
+  `2026 June`,
+  `2026 July`,
+  `2026 August`,
+  `2026 September`,
+  `2026 October`,
+  `2026 November`,
+  `2026 December`,
+];

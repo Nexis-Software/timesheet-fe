@@ -1,0 +1,31 @@
+.topNavigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+}
+
+.userSection {
+  display: flex;
+  align-items: center;
+  gap: 16px; /* Add some space between Avatar and buttons */
+}
+
+.avatar {
+  width: 40px; /* Adjust avatar size */
+  height: 40px;
+}
+
+.button {
+  font-size: 1rem;
+  text-transform: capitalize; /* Optional: Avoid all-uppercase text */
+  padding: 8px 16px;
+  background-color: #f50057; /* Nice primary color */
+  color: white;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #c51162; /* Slightly darker shade for hover */
+}

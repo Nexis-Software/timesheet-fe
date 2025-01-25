@@ -1,0 +1,93 @@
+/* login.module.css */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
+
+.loginForm {
+  width: 400px;
+  margin: 50px auto;
+  padding: 40px;
+  background-color: #000000; /* BLACK */
+  border: 2px solid #04bc00; /* TANGERINE */
+  border-radius: 15px;
+  box-shadow: 0 8px 20px #8dea365c; /* Slight TANGERINE glow */
+}
+
+.loginForm .inputContainer {
+  margin-top: 20px;
+}
+
+.loginForm input {
+  width: 100%;
+  height: 40px;
+  border-radius: 30px;
+  border: 2px solid #04bc00; /* TANGERINE */
+  padding: 10px; /* Adds space inside the input */
+  box-sizing: border-box;
+}
+
+.loginForm input:disabled {
+  opacity: 0.5;
+}
+
+.loginForm input:focus-visible {
+  outline: 0;
+}
+
+.loginForm label {
+  color: white;
+}
+
+.loginForm h1 {
+  text-align: center;
+  color: #ffffff; /* WHITE */
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.loginForm p {
+  text-align: center;
+  margin-top: 15px;
+  color: #ffffff; /* WHITE */
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.loginForm p a {
+  color: #04bc00; /* TANGERINE */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.loginForm p a:hover {
+  text-decoration: underline;
+  color: #ffc40c; /* Slightly lighter TANGERINE */
+}
+
+.loginButtonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.loginButton {
+  background-color: #04bc00;
+  padding: 12px 80px;
+  text-align: center;
+  border-radius: 30px;
+  margin-top: 30px;
+}
+
+.loginButton:hover {
+  background-color: #8eea36; /* Slightly lighter TANGERINE */
+}
+
+.loginButton:disabled {
+  opacity: 0.5;
+}

@@ -1,0 +1,255 @@
+.dashboardGrid {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .dashboardGrid {
+    flex-direction: column;
+    padding: 20px;
+  }
+}
+
+.toDoCard h6 {
+  text-align: left;
+  font-size: 14px;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.toDoCard {
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  width: 100%;
+  transform: scale(1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.toDoMiddleSection h1 {
+  color: red;
+  font-size: 52px;
+  margin-top: -20px;
+  margin-bottom: -30px;
+  font-weight: bold;
+}
+
+.toDoMiddleSection p {
+  color: red;
+  font-size: 14px;
+}
+
+.toDoBottomSection p {
+  color: #505050;
+  font-size: 14px;
+}
+
+/* PENDING */
+.pendingCard h6 {
+  text-align: left;
+  font-size: 14px;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.pendingCard {
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  width: 100%;
+  transform: scale(1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.pendingMiddleSection h1 {
+  color: #019df2;
+  font-size: 52px;
+  margin-top: -20px;
+  margin-bottom: -30px;
+  font-weight: bold;
+}
+
+.pendingMiddleSection p {
+  color: #019df2;
+  font-size: 14px;
+}
+
+.pendingBottomSection p {
+  color: #505050;
+  font-size: 14px;
+}
+
+/* DEV REVIEW */
+.devReviewCard h6 {
+  text-align: left;
+  font-size: 14px;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.devReviewCard {
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  width: 100%;
+  transform: scale(1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.devReviewMiddleSection h1 {
+  color: #ff8a4a;
+  font-size: 52px;
+  margin-top: -20px;
+  margin-bottom: -30px;
+  font-weight: bold;
+}
+
+.devReviewMiddleSection p {
+  color: #ff8a4a;
+  font-size: 14px;
+}
+
+.devReviewBottomSection p {
+  color: #505050;
+  font-size: 14px;
+}
+
+/* DONE */
+.doneCard h6 {
+  text-align: left;
+  font-size: 14px;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.doneCard {
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  width: 100%;
+  transform: scale(1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.doneMiddleSection h1 {
+  color: #4c8f0c;
+  font-size: 52px;
+  margin-top: -20px;
+  margin-bottom: -30px;
+  font-weight: bold;
+}
+
+.doneMiddleSection p {
+  color: #4c8f0c;
+  font-size: 14px;
+}
+
+.doneBottomSection p {
+  color: #505050;
+  font-size: 14px;
+}
+
+.toDoCard:hover,
+.pendingCard:hover,
+.devReviewCard:hover,
+.doneCard:hover {
+  transform: scale(1.1);
+}
+
+.timelineContainer {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 20px;
+  scrollbar-width: thin;
+  background-color: black;
+  margin-bottom: 40px;
+  border-radius: 20px;
+  border: 2px solid black;
+}
+
+@media screen and (max-width: 768px) {
+  .timelineContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.timelineContainer::-webkit-scrollbar {
+  height: 8px;
+}
+
+.timelineContainer::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+.timelineItem {
+  flex: 0 0 auto;
+  width: 180px;
+  /* background: linear-gradient(135deg, #fcd300, #4c8f0c); */
+  border-radius: 10px;
+  color: #505050;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(249, 249, 249, 0.314);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+  border: 1px solid #fcd300;
+  background-color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .timelineItem {
+    flex: auto;
+    width: 280px;
+  }
+}
+
+.timelineItem:hover {
+  transform: scale(1.05);
+}
+
+.timelineItem h6 {
+  font-size: 12px;
+  font-weight: 100;
+  margin-bottom: 5px;
+  margin-top: 20px;
+  color: #d4b202;
+}
+
+.timelineItem p {
+  font-size: 14px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.companyLogo {
+  width: 150px !important;
+}
+
+select {
+  width: 100%;
+  height: 40px;
+  border-radius: 30px;
+  border: 3px solid #04bc00;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+select:focus-visible {
+  outline: 0;
+}
